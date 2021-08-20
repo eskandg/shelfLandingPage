@@ -1,0 +1,455 @@
+
+
+/* External credits: canva.com, w3schools.com, getbootstrap.com, mdbootstrap.com, https://daneden.github.io/animate.css/, wowjs.uk
+
+Images
+------
+https://i.ebayimg.com/00/s/Mzc1WDI5MA==/z/eRcAAOSwGBtZYRYR/%24_2.JPG
+https://cdn.clipart.email/4ab60ccceac98f32af7c70b18948ef95_android-mockup-transparent-png-stickpng_740-740.png
+https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gs1-128_example.svg/1200px-Gs1-128_example.svg.png
+https://pngimage.net/wp-content/uploads/2018/06/tag-nfc-png-5.png
+https://static.thenounproject.com/png/2202-200.png
+https://www.kindpng.com/picc/m/549-5495274_gps-icon-png-free-images-gps-svg-transparent.png
+------
+*/
+
+
+* {
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+body {
+  margin:0;
+  font-family: 'Raleway', 'Verdana', 'sans-serif';
+  z-index: -1030;
+}
+
+.abeezee {
+  font-family: ABeeZee;
+}
+
+.navbar {
+  padding: .77rem 1rem !important;
+  box-shadow: 0 0px 25px 0.1px dimgrey;
+  background: white !important;
+  transition: background-color 0.5s ease 0s;
+  overflow-x: hidden !important;
+}
+
+.navbar-brand {
+  padding-right: 30px;
+  transition: 0.5s;
+}
+
+.navbar-brand:hover {
+  margin-left:5px;
+  padding-left:10px;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+}
+
+#nav-main {
+  padding-left:50px;
+}
+
+.navbar-nav .nav-link {
+  padding-right:13px !important;
+  padding-left:13px !important;
+}
+
+ul.navbar-nav {
+  font-weight: 580;
+  font-size:1.1rem;
+}
+
+ul.navbar-nav a:hover {
+  color:black;
+  font-weight: bolder;
+  background: rgba(0, 0, 0, 0.05);
+  margin-top:2.5px;
+  border-bottom: 1.5px solid black;
+  border-radius: 1.5px;
+  transition: border 0.3s linear;
+}
+
+a.nav-link.active {
+  color: rgba(0,0,0,0.5) !important;
+}
+
+a.nav-link.active:hover {
+  color:black !important;
+}
+
+#override_bstrap_container {
+   padding-left: 0px;
+   padding-right:0px;
+}
+
+.container-fluid#override_bstrap_container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory; /* enables slide */
+    position: fixed;
+    height: 100%;
+}
+
+.page_slide {
+  display: flex;
+  scroll-snap-align: start;
+  flex-flow: column nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  width:100%;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png);
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+  justify-content: center;
+}
+
+#override_bstrap_home {
+  padding-right:0 !important;
+  margin-right:0 !important;
+}
+
+.btn-light {
+  color:#454545;
+}
+
+.btn-light:hover {
+  background-color: #298a21 !important;
+  color:white !important;
+  border-color:dimgrey;
+  box-shadow: 0 0px 5px 0.1px dimgrey;
+}
+
+.btn-grey {
+  color:#fff;
+  background-color: grey;
+  border-color:darkslategrey;
+}
+
+.btn-grey:hover {
+  background-color: lightslategrey;
+  color:ghostwhite;
+}
+
+#learn_text {
+  transition: 1s;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#about_card_left {
+  z-index: 1;
+  transition: 0.6s;
+}
+
+#about_card_right {
+  z-index: 1;
+  transition: 0.6s;
+}
+
+.arrow {
+  text-shadow:1px 8px black;
+}
+
+.about_card_text {
+  font-size:1.3rem;
+}
+
+/*.overflow_fix {
+  text-overflow:ellipsis; 
+  white-space:nowrap; 
+  overflow:hidden;
+}*/
+
+.review_h1 {
+  width: fit-content;
+  background:linear-gradient(90deg,#ff8000,#ff5f4a);
+  border-radius: 10px;
+  padding:10px;
+  color:whitesmoke;
+  text-shadow:3px -1px black;
+  letter-spacing: 0.2vw;
+  transform: translateY(-13.75vh);
+  -ms-transform: translateY(-13.75vh);
+  -webkit-transform: translateY(-13.75vh);
+}
+
+.carousel-indicators li {
+  transition:1s;
+  background-color:dimgrey;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+  transform: translateY(10vh);
+  margin:5px;
+  background-color: dimgrey;
+}
+
+.fa-star {
+  text-shadow: 1px -1px;
+}
+
+#count_downloads {
+  font-size:200%;
+}
+
+.store_logo {
+  width:200px;
+  height:200px;
+  z-index: 2;
+}
+
+.store:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+}
+
+.overlay:hover {
+  border-radius:30px;
+  box-shadow: 0 0px 1.5px 0.1px dimgrey;
+  width:250px;
+  height:200px;
+  z-index: 1
+}
+
+.star_color {
+  color:orange;
+  text-shadow: -1px 1px black;
+}
+
+.about {
+  height: 110vh;
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png);
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+}
+
+.reviews {
+  background-color:white;
+}
+
+.downloads {
+  background-color:#fcfcfc;
+}
+
+.store {
+  transition: 0.5s;
+}
+
+.contact {
+  background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(https://digitalsynopsis.com/wp-content/uploads/2017/07/beautiful-color-ui-gradients-backgrounds-sweet-morning.png);
+  background-position: center;
+  background-attachment: local;
+  background-size: cover;
+}
+
+.bottom {
+  height:12%;
+  background-color:#fafaf7;
+  scroll-snap-align:end;
+  box-shadow: 0 0px 1.5px 0.1px dimgrey;
+}
+
+#about_img1 {
+  width: 150px;
+  height: 150px;
+}
+
+#about_img2 {
+  height: 150px;
+}
+
+.about_card_text {
+  font-size:0.75rem;
+}
+
+.about_num {
+  font-size:1rem;
+  width: 40px;
+}
+
+@media (min-width: 992px) { /* center bootstrap navbar */
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid, .navbar-expand-lg>.container-lg, .navbar-expand-lg>.container-md, .navbar-expand-lg>.container-sm, .navbar-expand-lg>.container-xl {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    transform: translateX(22.5%);
+}
+
+/* custom media queries */
+
+@media (min-height: 0px) {
+ .about_card_text {
+  font-size:0.75rem;
+ }
+ #about_img1 {
+   width: 200px;
+   height: 200px;
+ }
+ #about_img2 {
+   height: 200px;
+ }
+ .about_num {
+   font-size:1.35rem;
+   width: 30px;
+ }
+ .review_h1 {
+  width: fit-content;
+  background:linear-gradient(90deg,#ff8000,#ff5f4a);
+  border-radius: 10px;
+  padding:10px;
+  color:whitesmoke;
+  text-shadow:3px -1px black;
+  letter-spacing: 0.2vw;
+  transform: translateY(-3vh);
+  -ms-transform: translateY(-3vh);
+  -webkit-transform: translateY(-3vh);
+ }
+ .contact {
+   height:150%;
+ }
+ #contactform {
+   height:100%;
+ }
+}
+
+
+@media (min-height: 700px) {
+ .about_card_text {
+  font-size:0.96rem;
+ }
+ #about_img1 {
+   width: 250px;
+   height: 250px;
+ }
+ #about_img2 {
+   height: 200px;
+ }
+ .about_num {
+   font-size:1.35rem;
+   width: 30px;
+ }
+ .review_h1 {
+  width: fit-content;
+  background:linear-gradient(90deg,#ff8000,#ff5f4a);
+  border-radius: 10px;
+  padding:10px;
+  color:whitesmoke;
+  text-shadow:3px -1px black;
+  letter-spacing: 0.2vw;
+  transform: translateY(-3vh);
+  -ms-transform: translateY(-3vh);
+  -webkit-transform: translateY(-3vh);
+ }
+ .contact {
+   height:150%;
+ }
+ #contactform {
+   height:88%;
+ }
+}
+
+@media (min-height: 800px) {
+  .review_h1 {
+  width: fit-content;
+  background:linear-gradient(90deg,#ff8000,#ff5f4a);
+  border-radius: 10px;
+  padding:10px;
+  color:whitesmoke;
+  text-shadow:3px -1px black;
+  letter-spacing: 0.2vw;
+  transform: translateY(-6.75vh);
+  -ms-transform: translateY(-6.75vh);
+  -webkit-transform: translateY(-6.75vh);
+ }
+ .contact {
+   height:120%;
+ }
+  #contactform {
+   height:100%;
+ }
+}
+
+
+@media (min-height: 900px) {
+ .about_card_text {
+  font-size:1.15rem;
+ }
+ #about_img1 {
+   width: 300px;
+   height: 300px;
+ }
+ #about_img2 {
+   height: 300px;
+ }
+ .about_num {
+   font-size:1.75rem;
+   width: 40px;
+ }
+  .review_h1 {
+  width: fit-content;
+  background:linear-gradient(90deg,#ff8000,#ff5f4a);
+  border-radius: 10px;
+  padding:10px;
+  color:whitesmoke;
+  text-shadow:3px -1px black;
+  letter-spacing: 0.2vw;
+  transform: translateY(-13.75vh);
+  -ms-transform: translateY(-13.75vh);
+  -webkit-transform: translateY(-13.75vh);
+ }
+ .contact {
+   height:100%;
+ }
+ #contactform {
+   height:100%;
+ }
+}
+
+
+@media (min-height: 1030px) {
+ .about_card_text {
+  font-size:1.5rem;
+ }
+ #about_img1 {
+   width: 300px;
+   height: 300px;
+ }
+ #about_img2 {
+   height: 300px;
+ }
+ .about_num {
+   font-size:2.25rem;
+   width: 40px;
+ }
+  .review_h1 {
+  width: fit-content;
+  background:linear-gradient(90deg,#ff8000,#ff5f4a);
+  border-radius: 10px;
+  padding:10px;
+  color:whitesmoke;
+  text-shadow:3px -1px black;
+  letter-spacing: 0.2vw;
+  transform: translateY(-13.75vh);
+  -ms-transform: translateY(-13.75vh);
+  -webkit-transform: translateY(-13.75vh);
+ }
+ .contact {
+   height:100%;
+ }
+ #contactform {
+   height:100%;
+ }
+}

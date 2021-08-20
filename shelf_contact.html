@@ -1,0 +1,127 @@
+<!-- External credits: w3schools.com, getbootstrap.com, mdbootstrap.com, https://daneden.github.io/animate.css/, wowjs.uk, canva.com
+
+Images
+------
+https://i.ebayimg.com/00/s/Mzc1WDI5MA==/z/eRcAAOSwGBtZYRYR/%24_2.JPG
+https://cdn.clipart.email/4ab60ccceac98f32af7c70b18948ef95_android-mockup-transparent-png-stickpng_740-740.png
+https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gs1-128_example.svg/1200px-Gs1-128_example.svg.png
+https://cdn.freebiesupply.com/logos/large/2x/google-play-store-logo-png-transparent.png
+https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Store-512.png
+https://pngimage.net/wp-content/uploads/2018/06/tag-nfc-png-5.png
+https://static.thenounproject.com/png/2202-200.png
+https://www.kindpng.com/picc/m/549-5495274_gps-icon-png-free-images-gps-svg-transparent.png
+------
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SHELF | CONTACT US</title>
+    <link rel="icon" href="https://i.ebayimg.com/00/s/Mzc1WDI5MA==/z/eRcAAOSwGBtZYRYR/%24_2.JPG" type="image/icon type">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <link href="shelf.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+  
+    <div class="container-fluid" id="override_bstrap_container" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <!-- navigation -->
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="./shelf.html#home">
+                    <img src="https://ibin.co/5HJclslzTim5.png" alt="Oops something went wrong!" width="55" height="60"></img>
+                </a>
+                <!-- hamburger button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#small_screen_nav" aria-controls="small_screen_nav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- hamburger content -->
+                <div class="collapse navbar-collapse" style="overflow-y: hidden !important;" id="small_screen_nav">
+
+                    <!-- links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shelf.html#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shelf.html#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shelf.html#downloads">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <section class="contact justify-content-center text-center">
+          <div id="contactform" class="d-flex justify-content-center flex-column">
+            <h5 style="width:510px;" class="wow fadeIn border border-light rounded bg-dark mt-4 p-2 text-white align-self-center abeezee" data-wow-duration="1.5s">Have any queries? Fill out the form below.</h1> 
+            <div style="width:fit-content;" class="wow fadeIn rounded border bg-white text-left align-self-center mt-3" data-wow-delay="0.5s" data-wow-duration="2.5s"> 
+             <form class="p-5">
+               <div class="form-row mb-3">
+                 <div class="col">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Forename" required="">
+                 </div>
+
+                 <div class="col">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Surname" required="">
+                 </div>
+               </div>
+               <div class="form-group">
+                <label for="emailadd">Email Address</label>
+                <input type="email" class="form-control" id="emailadd" required="">
+               </div>
+               <div class="form-group">
+                <label for="telnum">Telephone No.</label>
+                <input type="tel" class="form-control" id="telnum">
+               </div>
+               <div class="form-group">
+                <label for="group">Individual/Business</label>
+                <select class="form-control" id="group" required="">
+                  <option>Individual</option>
+                  <option>Business</option>
+                </select>
+               </div>
+               <div class="form-group mt-4" required="">
+                  <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
+               </div>
+               <div class="text-center mt-5">
+                 <button class="border border-default btn btn-light w-50" type="submit"><span style="font-weight:bolder;">Submit</span></button>
+               </div>
+             </form>
+            </div>
+         </div>
+        </section>
+        <footer class="abeezee page-footer p-3 mx-auto text-black text-center flex-nowrap">
+            <br>
+            <p>CA115 | GROUP AH</p>
+        </footer>
+    </div>
+    <script>
+        // init
+        var wow = new WOW()
+        wow.init()
+    </script>
+
+</body>

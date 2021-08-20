@@ -1,0 +1,349 @@
+<!-- External credits: w3schools.com, getbootstrap.com, mdbootstrap.com, https://daneden.github.io/animate.css/, wowjs.uk, canva.com
+
+Images
+------
+https://i.ebayimg.com/00/s/Mzc1WDI5MA==/z/eRcAAOSwGBtZYRYR/%24_2.JPG
+https://cdn.clipart.email/4ab60ccceac98f32af7c70b18948ef95_android-mockup-transparent-png-stickpng_740-740.png
+https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Gs1-128_example.svg/1200px-Gs1-128_example.svg.png
+https://cdn.freebiesupply.com/logos/large/2x/google-play-store-logo-png-transparent.png
+https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Store-512.png
+https://pngimage.net/wp-content/uploads/2018/06/tag-nfc-png-5.png
+https://static.thenounproject.com/png/2202-200.png
+https://www.kindpng.com/picc/m/549-5495274_gps-icon-png-free-images-gps-svg-transparent.png
+------
+-->
+
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <title>SHELF | HOME</title>
+    <link rel="icon" href="https://i.ebayimg.com/00/s/Mzc1WDI5MA==/z/eRcAAOSwGBtZYRYR/%24_2.JPG" type="image/icon type">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+    <link href="shelf.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+</head>
+
+<body>
+
+    <div class="container-fluid" id="override_bstrap_container" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <!-- navigation -->
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top">
+            <div class="container">
+
+                <a class="navbar-brand" href="#home">
+                    <img src="https://ibin.co/5HJclslzTim5.png" alt="Oops something went wrong!" width="55" height="60"></img>
+                </a>
+                <!-- hamburger button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#small_screen_nav" aria-controls="small_screen_nav" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- hamburger content -->
+                <div class="collapse navbar-collapse" style="overflow-y: hidden !important;" id="small_screen_nav">
+
+                    <!-- links -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#downloads">Downloads</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shelf_contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- Home Slide -->
+        <section class="page_slide home" id="home">
+            <div class="row h-100" style="padding-left: 7rem !important;">
+                <!-- Content -->
+                <div class="col my-auto">
+                    <h1 class="wow fadeInDown display-2 abeezee text-white" data-wow-duration="1.5s" style="text-shadow: -3px -2px #474747">SHELF</h1>
+                    <p class="wow lead text-white fadeInDown text-wrap" data-wow-duration="1.25s">Do your shopping with SHELF<sup style="font-size: 10px;">TM</sup>, find stock with ease, anywhere, everywhere.
+                        <br>Make your local purchases easier with just a small few steps.
+                        
+                        <!-- Direct to download button -->
+                        <br></br>
+                        <a href="#downloads" class="wow fadeIn btn btn-light btn-lg" role="button" data-wow-duration="2s" data-wow-delay="1s">
+                            <strong id="download_btn">Download</strong>
+                        </a></p>
+
+                </div>
+
+                <div class="col my-auto">
+                    <div class="col">
+                        <div class="row pr-5">
+                            <!-- phone -->
+                            <img class="wow fadeInDown img-fluid" data-wow-duration="1.8s" src="https://i.ibb.co/TTBnjs1/imageedit-5-5892044878.png"></img>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Learn More button -->
+            <a id="learn_button" href="#about" class="wow slideInUp btn btn-grey btn-lg rounded-0" data-wow-delay="0.8s" role="button" style="opacity: 95%;"><span id="learn_text">Learn More</span></a>
+
+        </section>
+        
+        <!-- About Slide -->
+        <section class="page_slide about" id="about" style="z-index:1">
+            
+            <!-- Two directional arrows -->
+            <h1 class="arrow text-white display-2" style="position: absolute; transform: translate(5vw, 50vh); -ms-transform: translate(5vw, 50vh); -webkit-transform: translate(5vw, 50vh);">></h1>
+            <h1 class="arrow text-white display-2" style="position: absolute; transform: translate(92vw, 50vh); -ms-transform: translate(92vw, 50vh); -webkit-transform: translate(92vw, 50vh);"><</h1>
+            
+            <div class="row h-100 flex-nowrap" style="margin-left:0; margin-right: 0;">
+
+                <!-- Left Card -->
+                <div id="about_card_left" class="card mh-100 w-50 rounded-0">
+                    <!-- Content -->
+                    <div class="card-body text-center flex-nowrap overflow_fix" style="padding-top:7rem!important;">
+                        <!-- Card number -->
+                        <h3 class="about_num border rounded mx-auto text-white bg-dark">1</h3>
+
+                        <br><p class="about_card_text">
+                            Whether you're just someone with a family, a student or just anyone at all.
+                            <br>Finding stock, cheaper prices and much more couldn't be any easier.<br>
+                            So, how do we work? Must be complicated? Isn't it?
+                            <br>Well, simply...</p>
+                        <img id="about_img2" class="img-fluid" src="https://s6.gifyu.com/images/Untitled-design4.png"></img>
+                        <p class="about_card_text">
+                            <span style="font-weight: bolder;">No, not really.</span>
+                            <br>With the latest technologies, we've been able to create a way for retailers to more easily track,
+                            <br>and control their stock, and to be able to notify when their product(s) come back in stock.
+                            <br></br>By combining NFC, GPS, and barcodes together, information about products can be stored quicker and more securely.
+                            <br>With this information, this means that you can use many filters that are suited to your needs.<br></br>Need to save money? Find some specific brand of food? Or something as ridiculous as finding a sofa?<br>Anything, we'll help get you covered, and if you don't see what you want, put it in our Notify list. You'll see it before you know it!</p>
+
+                    </div>
+                </div>
+                <!-- Right Card -->
+                 <div id="about_card_right" class="card mh-100 w-50 rounded-0">
+                    <!-- Content -->
+                    <div class="card-body text-center flex-nowrap overflow_fix" style="padding-top:7rem!important;">
+                        <!-- Card number -->
+                        <h3 class="about_num border rounded mx-auto text-white bg-dark">2</h3>
+                        <div>
+                            <br><img id="about_img1" class="border img-fluid" src="https://ibin.co/5IZgIThXw73d.png"></img>
+                            <br></br>
+                            <p class="about_card_text">
+                                <br>Since 2020, we've always been striving to support families and businesses across the globe.
+                                <br>We understand how precious your time is. Who enjoys losing time they didn't enjoy?</br>
+                                <br>With you, you've kept our vision alive with your feedback over the years,
+                                <br>expressing your desires, finding what you need whenever you need it.
+                                <br>Our mission is to complete your mission faster than anyone else.
+                                <br></br>Again, we believe in the ability of getting more free time.
+                                <br>Because that's what everyone deserves and that's what we offer.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Reviews Slide -->
+        <section class="page_slide reviews justify-content-center flex-nowrap" id="reviews">
+            
+            <!-- Reviews header -->
+            <h1 class="review_h1 flex-column mx-auto border text-center">Check out our reviews!</h1>
+            
+            <div class="d-flex flex-column mx-auto">
+                <div class="container-fluid">
+                    <div id="carousel-content" class="display-4 carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators text-dark pt-5">
+                            <li class="active" data-target="#carousel-content" data-slide-to="0"></li>
+                            <li data-target="#carousel-content" data-slide-to="1"></li>
+                            <li data-target="#carousel-content" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- reviews -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="border bg-white carousel-item active text-center p-4">
+                                <p style="font-size:2.5rem;">"This app is saving me both loads of time and money. Just get it!"</p>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <br>
+                                <strong>Mark Quotation</strong>
+                            </div>
+                            <div class="border carousel-item text-center p-4">
+                                <p style="font-size:3rem;">"I had a lot of inventory, and after downloading, there was not much left."</p>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star"></span>
+                                <br>
+                                <strong>Mark Exclamation</strong>
+                            </div>
+                            <div class="border carousel-item text-center p-4">
+                                <p style="font-size:2.5rem;">"Quite nice, it definitely helps a lot with shopping as they say.
+                                    <br>Would recommend it to anyone."</p>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star star_color"></span>
+                                <span class="fa fa-star"></span>
+                                <br>
+                                <strong>Mark Question</strong>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- social media tags -->
+            <div class="align-self-center text-center" style="transform: translateY(10vh); -ms-transform: translateY(10vh); -webkit-transform: translateY(10vh)">
+                <p>Share your thoughts with us on social media!</p>
+                <a href="https://www.facebook.com/"><i class="mx-2 fa fa-facebook-official text-dark" style="font-size:36px"></i></a>
+                <a href="https://twitter.com/explore"><i class="mx-2 fa fa-twitter-square text-dark" style="font-size:36px"></i></a>
+                <a href="https://www.instagram.com/"><i class="mx-2 fa fa-instagram text-dark" style="font-size:36px"></i></a>
+            </div>
+
+        </section>
+
+        <!-- Downloads Slide -->
+        <section class="page_slide downloads flex-nowrap" id="downloads">
+            <div class="d-flex flex-column my-auto">
+
+                <!-- Download counter -->
+                <span style="font-size:1.15rem;" class="d-flex align-self-center abeezee">Downloads</span>
+                <a href="#" class="d-flex align-self-center mb-5 text-dark" data-toggle="tooltip" title="Must be free right!?">
+                    <span class="abeezee" id="count_downloads"></span>
+                </a>
+
+                <!-- Download stores -->
+                <div class="row align-self-center flex-nowrap text-center">
+                    <div class="col-md-6 align-self-center flex-nowrap" style="transform: translate(-10vw); -webkit-transform: translate(-10vw); -ms-transform: translate(-10vw);">
+                        <a href="#">
+                            <div class="overlay store" style="width:250px; height:250px;">
+                                <img style="transform: translate(0, 20px); -webkit-transform: translate(0, 20px); -ms-transform: translate(0, 20px);" src="https://cdn.freebiesupply.com/logos/large/2x/google-play-store-logo-png-transparent.png" class="store_logo img-fluid"></img>
+                            </div>
+                        </a>
+                        <h4 class="pt-4">Google Play</h4>
+                    </div>
+                    <div class="col-md-6 align-self-center" style="transform: translate(10vw); -webkit-transform: translate(10vw); -ms-transform: translate(10vw);">
+                        <a href="#" data-toggle="tooltip">
+                            <div class="overlay store" style="width:250px; height:250px;">
+                                <img style="transform: translate(0, 20px); -webkit-transform: translate(0, 20px); -ms-transform: translate(0, 20px);" src="https://cdn0.iconfinder.com/data/icons/apple-apps/100/Apple_Store-512.png" class="store_logo img-fluid"></img>
+                            </div>
+                        </a>
+                        <h4 class="pt-4">App Store</h4>
+                    </div>
+                </div>
+
+                <!-- social media tags -->
+                <div class="align-self-center text-center" style="transform: translateY(10vh); -ms-transform: translateY(10vh); -webkit-transform: translateY(10vh)">
+                    <p>Follow us!</p>
+                    <a href="https://www.facebook.com/"><i class="mx-2 fa fa-facebook-official text-dark" style="font-size:36px"></i></a>
+                    <a href="https://twitter.com/explore"><i class="mx-2 fa fa-twitter-square text-dark" style="font-size:36px"></i></a>
+                    <a href="https://www.instagram.com/"><i class="mx-2 fa fa-instagram text-dark" style="font-size:36px"></i></a>
+                </div>
+
+            </div>
+
+        </section>
+       
+        <!-- footer -->
+        <footer class="abeezee bottom page-footer p-3 mx-auto text-black text-center flex-nowrap">
+            <br>
+            <p>CA115 | GROUP AH</p>
+        </footer>
+
+    </div>
+
+    <script>
+
+        // init
+        var wow = new WOW()
+        wow.init()
+        $('.carousel').carousel()
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // fake download counter script
+        function get_rnd_num(min, max) {
+            return Math.floor(Math.random() * (max - min) + min)
+        }
+
+        var current_value = 0
+        var counter = $("#count_downloads")
+        counter.html(Number(get_rnd_num(1000000, 10000000)).toLocaleString()) // initial num when page loads
+        $(document).ready(
+            () => {
+
+                var interval = get_rnd_num(1000, 10000); // initial seconds
+                // console.debug("Initial interval in seconds = " + interval / 1000);
+                setInterval(() => { // execute block of code below for a number of n seconds infinitely
+                    interval = get_rnd_num(1000, 10000); // keep changing seconds
+                    // console.debug("Interval in seconds = " + interval / 1000);
+                    current_value = counter.html().replace(/,/g, ""); // grab the current count to then change it into a integer to later put it back into text
+                    counter.html(Number(parseInt(current_value) + get_rnd_num(0, 6)).toLocaleString()); // increment current_value and change the element containing id count_downloads
+                }, interval);
+                // end of fake download counter script
+
+                // home page learn more button script
+                $("#learn_button").mouseenter(function() {
+                  $("#learn_text").addClass("fa fa-chevron-down")
+                  $("#learn_text").attr("style", "font-size: 3rem; text-shadow: 0px -2px black;")
+                  $("#learn_text").html("")
+                });
+
+                $("#learn_button").mouseleave(function() {
+                  $("#learn_text").removeClass("display-4 fa fa-chevron-down")
+                  $("#learn_text").attr("style", "")
+                  $("#learn_text").html("Learn More")
+                });
+                // end of home page learn more button script
+
+                // About page cards script
+                $("#about_card_left").mouseenter(function() {
+                    if ($("#about_card_right").css("width") != "12%") {
+                        $(this).attr("style", "width: 88%!important;")
+                        $("#about_card_right").attr("style", "width: 12%!important; opacity:0%;")
+                    }
+                });
+                $("#about_card_left").mouseleave(function() {
+                    $(this).attr("style", "width: 50%!important")
+                    $("#about_card_right").attr("style", "width: 50%!important")
+                });
+
+                $("#about_card_right").mouseenter(function() {
+                    $("#about_card_left").attr("style", "width: 12%!important; opacity: 0%;")
+                    $(this).attr("style", "width:88%!important")
+                });
+                $("#about_card_right").mouseleave(function() {
+                    $("#about_card_left").attr("style", "width: 50%!important")
+                    $(this).attr("style", "width: 50%!important")
+                });
+                // end of about page cards script
+            });
+
+    </script>
+
+</body>
+
+</html>
